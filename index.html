@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airbnb</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top-bar">
+    <div class="nav-row">
+      <a href="#" class="brand">
+        <span class="logo-badge"><i class="fa fa-compass"></i></span>
+        <span class="brand-text">airbnb</span>
+      </a>
+
+      <nav class="categories">
+  <a href="#all" id="all" class="cat">
+    <i class="fa fa-globe"></i>
+    <span>All</span>
+  </a>
+  <a href="#homes" id="homes" class="cat">
+    <i class="fa fa-home"></i>
+    <span>Homes</span>
+  </a>
+  <a href="#hotels" id="hotels" class="cat">
+    <i class="fa fa-building"></i>
+    <span>Hotels</span>
+  </a>
+  <a href="#experiences" id="experiences" class="cat">
+    <i class="fa fa-compass"></i>
+    <span>Experiences</span>
+  </a>
+  <a href="#services" id="services" class="cat">
+    <i class="fa fa-bell"></i>
+    <span>Services</span>
+  </a>
+</nav>
+
+      <div class="right-links">
+        <a href="#" class="host-btn">Become a host</a>
+        <button class="globe-btn" aria-label="Language"><i class="fa fa-globe"></i></button>
+        <button class="profile-btn" aria-label="Menu">
+          <i class="fa fa-user-circle" aria-hidden="true"></i>
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+    <div class="search-wrap">
+      <div class="big-search">
+        <div class="box">
+          <span class="label">Where</span>
+          <span class="sub">Search destinations</span>
+        </div>
+        <div class="line"></div>
+        <div class="box">
+          <span class="label">When</span>
+          <span class="sub">Add dates</span>
+        </div>
+        <div class="line"></div>
+        <div class="box last-box">
+          <div>
+            <span class="label">Who</span>
+            <span class="sub">Add guests</span>
+          </div>
+          <button class="red-search" aria-label="Search"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+
+      <div class="compact-search">
+        <span class="mini-item"><i class="fa fa-home"></i> Anywhere</span>
+        <span class="mini-line"></span>
+        <span class="mini-item">Anytime</span>
+        <span class="mini-line"></span>
+        <span class="mini-item">Add guests</span>
+        <button class="mini-red" aria-label="Search"><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+
+    <div class="phone-top">
+      <div class="phone-search">
+        <i class="fa fa-search"></i>
+        <span>Start your search</span>
+      </div>
+
+      <div class="phone-tabs">
+        <a href="#" class="tab active">
+          <i class="fa fa-globe"></i>
+          <span>All</span>
+        </a>
+        <a href="#" class="tab">
+          <i class="fa fa-home"></i>
+          <span>Homes</span>
+        </a>
+        <a href="#" class="tab">
+          <i class="fa fa-compass"></i>
+          <span>Experiences</span>
+        </a>
+        <a href="#" class="tab">
+          <i class="fa fa-bell" aria-hidden="true"></i>
+          <span>Services</span>
+        </a>
+      </div>
+    </div>
+
+  </header>
+  <main class="main-body">
+
+    <section class="row-section">
+      <div class="row-head">
+        <h2>Available in Abuja this weekend <i class="fa fa-arrow-right" aria-hidden="true"></i></h2>
+        <div class="arrows">
+          <button class="arr off" aria-label="Previous"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+          <button class="arr" aria-label="Next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        </div>
+      </div>
+
+      <div class="grid-row">
+        <article class="item">
+          <div class="pic-box">
+            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&h=600&q=80" alt="Apartment in Abuja">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Apartment in Abuja</h3>
+            <p>$90 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 5.0</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="pic-box">
+            <span class="tag">Guest favorite</span>
+            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=600&h=600&q=80" alt="Apartment in Abuja">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Apartment in Abuja</h3>
+            <p>$112 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 5.0</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="pic-box">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=600&h=600&q=80" alt="Apartment in Abuja Municipal">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Apartment in Abuja Municipal</h3>
+            <p>$150 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 4.82</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="pic-box">
+            <span class="tag">Guest favorite</span>
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&h=600&q=80" alt="Apartment in Federal Capital Territory">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Apartment in Federal Capital Territory</h3>
+            <p>$96 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 4.98</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="pic-box">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&h=600&q=80" alt="Apartment in Abuja">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Apartment in Abuja</h3>
+            <p>$150 for 2 nights · <i class="fa fa-star"></i> 5.0</p>
+          </div>
+        </article>
+
+    <article class="item">
+          <div class="pic-box">
+            <span class="tag">Guest favorite</span>
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&h=600&q=80" alt="Apartment in Abuja">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o"></i></button>
+          </div>
+          <div class="details">
+            <h3>Apartment in Abuja</h3>
+            <p>$260 for 2 nights · <i class="fa fa-star"></i> 5.0</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="row-section">
+      <div class="row-head">
+        <h2>Places to stay in Beirut <i class="fa fa-arrow-right"></i></h2>
+        <div class="arrows">
+          <button class="arr off" aria-label="Previous"><i class="fa fa-chevron-left"></i></button>
+          <button class="arr" aria-label="Next"><i class="fa fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <div class="grid-row">
+        <article class="item">
+          <div class="pic-box">
+            <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=600&h=600&q=80" alt="Apartment in Beirut">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Apartment in Beirut</h3>
+            <p>$160 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 4.96</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="pic-box">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&h=600&q=80" alt="Apartment in Beirut">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Apartment in Beirut</h3>
+            <p>$204 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 4.97</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="pic-box">
+            <span class="tag">Guest favorite</span>
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&h=600&q=80" alt="Apartment in Beirut">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Apartment in Beirut</h3>
+            <p>$185 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 4.91</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="pic-box">
+            <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=600&h=600&q=80" alt="Loft in Beirut">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Loft in Beirut</h3>
+            <p>$220 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 5.0</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="pic-box">
+            <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&h=600&q=80" alt="Suite in Beirut">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Suite in Beirut</h3>
+            <p>$140 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 4.88</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="pic-box">
+            <span class="tag">Guest favorite</span>
+            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=600&h=600&q=80" alt="Condo in Beirut">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Condo in Beirut</h3>
+            <p>$195 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 4.95</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="row-section">
+      <div class="row-head">
+        <h2>Available in Ikeja this weekend <i class="fa fa-arrow-right" aria-hidden="true"></i></h2>
+        <div class="arrows">
+          <button class="arr off" aria-label="Previous"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+          <button class="arr" aria-label="Next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        </div>
+      </div>
+
+      <div class="grid-row">
+        <article class="item">
+          <div class="pic-box">
+            <span class="tag">Guest favorite</span>
+            <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=600&h=600&q=80" alt="Home in Ikeja">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Home in Ikeja</h3>
+            <p>$264 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 5.0</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="pic-box">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=600&h=600&q=80" alt="Apartment in Lagos">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Apartment in Lagos</h3>
+            <p>$102 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 4.78</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="pic-box">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&h=600&q=80" alt="Home in Lagos">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Home in Lagos</h3>
+            <p>$110 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 4.87</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="pic-box">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=600&h=600&q=80" alt="Apartment in Ikeja">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Apartment in Ikeja</h3>
+            <p>$129 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 5.0</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="pic-box">
+            <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=600&h=600&q=80" alt="Apartment in Lagos">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Apartment in Lagos</h3>
+            <p>$96 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 5.0</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="pic-box">
+            <span class="tag">Guest favorite</span>
+            <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=600&h=600&q=80" alt="Condo in Lagos">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Condo in Lagos</h3>
+            <p>$64 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 4.95</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="row-section">
+      <div class="row-head">
+        <h2>Available in Lekki this weekend <i class="fa fa-arrow-right" aria-hidden="true"></i></h2>
+        <div class="arrows">
+          <button class="arr off" aria-label="Previous"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+          <button class="arr" aria-label="Next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        </div>
+      </div>
+
+      <div class="grid-row">
+        <article class="item">
+          <div class="pic-box">
+            <span class="tag">Guest favorite</span>
+            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=600&h=600&q=80" alt="Apartment in Lekki">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Apartment in Lekki</h3>
+            <p>$212 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 4.89</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="pic-box">
+            <span class="tag">Guest favorite</span>
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&h=600&q=80" alt="Apartment in Lekki">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Apartment in Lekki</h3>
+            <p>$178 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 4.93</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="pic-box">
+            <span class="tag">Guest favorite</span>
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&h=600&q=80" alt="Duplex in Lekki">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Duplex in Lekki</h3>
+            <p>$240 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 4.97</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="pic-box">
+            <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=600&h=600&q=80" alt="Villa in Lekki">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Villa in Lekki</h3>
+            <p>$310 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 5.0</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="pic-box">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&h=600&q=80" alt="Studio in Lekki">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Studio in Lekki</h3>
+            <p>$115 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 4.85</p>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="pic-box">
+            <span class="tag">Guest favorite</span>
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=600&h=600&q=80" alt="Penthouse in Lekki">
+            <button class="fav" aria-label="Save"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+          </div>
+          <div class="details">
+            <h3>Penthouse in Lekki</h3>
+            <p>$290 for 2 nights · <i class="fa fa-star" aria-hidden="true"></i> 4.99</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="inspiration-box">
+      <h2>Inspiration for future getaways</h2>
+
+      <div class="insp-tabs">
+        <a href="#" class="insp-tab active">Popular</a>
+        <a href="#" class="insp-tab">Arts &amp; culture</a>
+        <a href="#" class="insp-tab">Beach</a>
+        <a href="#" class="insp-tab">Mountains</a>
+        <a href="#" class="insp-tab">Outdoors</a>
+        <a href="#" class="insp-tab">Things to do</a>
+        <a href="#" class="insp-tab">Travel tips &amp; inspiration</a>
+        <a href="#" class="insp-tab">Airbnb-friendly apartments</a>
+        <span class="insp-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+      </div>
+
+      <div class="insp-grid">
+        <a href="#" class="place-link">
+          <strong>Dallas</strong>
+          <span>Vacation rentals</span>
+        </a>
+        <a href="#" class="place-link">
+          <strong>Portland</strong>
+          <span>Vacation rentals</span>
+        </a>
+        <a href="#" class="place-link">
+          <strong>Minneapolis</strong>
+          <span>Monthly Rentals</span>
+        </a>
+        <a href="#" class="place-link">
+          <strong>Galveston</strong>
+          <span>Cottage rentals</span>
+        </a>
+        <a href="#" class="place-link">
+          <strong>Cleveland</strong>
+          <span>Apartment rentals</span>
+        </a>
+        <a href="#" class="place-link">
+          <strong>Barcelona</strong>
+          <span>Villa rentals</span>
+        </a>
+        <a href="#" class="place-link">
+          <strong>Gulf Shores</strong>
+          <span>Cottage rentals</span>
+        </a>
+        <a href="#" class="place-link">
+          <strong>Amsterdam</strong>
+          <span>Villa rentals</span>
+        </a>
+        <a href="#" class="place-link">
+          <strong>Charlotte</strong>
+          <span>Apartment rentals</span>
+        </a>
+        <a href="#" class="place-link">
+          <strong>Raleigh</strong>
+          <span>Villa rentals</span>
+        </a>
+        <a href="#" class="place-link">
+          <strong>Richmond</strong>
+          <span>Condo rentals</span>
+        </a>
+        <a href="#" class="place-link">
+          <strong>Kauai</strong>
+          <span>Vacation rentals</span>
+        </a>
+        <a href="#" class="place-link">
+          <strong>West Palm Beach</strong>
+          <span>House rentals</span>
+        </a>
+        <a href="#" class="place-link">
+          <strong>Whistler</strong>
+          <span>Monthly Rentals</span>
+        </a>
+        <a href="#" class="place-link">
+          <strong>San Juan</strong>
+          <span>House rentals</span>
+        </a>
+        <a href="#" class="place-link">
+          <strong>St. Petersburg</strong>
+          <span>Cottage rentals</span>
+        </a>
+        <a href="#" class="place-link">
+          <strong>Philadelphia</strong>
+          <span>Monthly Rentals</span>
+        </a>
+        <a href="#" class="place-link more-link">
+          <strong>Show more <i class="fa fa-chevron-down" aria-hidden="true"></i></strong>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-cols">
+        <div class="f-col">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Get help with a safety issue</a></li>
+            <li><a href="#">AirCover</a></li>
+            <li><a href="#">Travel insurance</a></li>
+            <li><a href="#">Anti-discrimination</a></li>
+            <li><a href="#">Disability support</a></li>
+            <li><a href="#">Cancellation options</a></li>
+            <li><a href="#">Report neighborhood concern</a></li>
+          </ul>
+        </div>
+
+        <div class="f-col">
+          <h3>Hosting</h3>
+          <ul>
+            <li><a href="#">Airbnb your home</a></li>
+            <li><a href="#">Airbnb your hotel</a></li>
+            <li><a href="#">Airbnb your experience</a></li>
+            <li><a href="#">Airbnb your service</a></li>
+            <li><a href="#">AirCover for Hosts</a></li>
+            <li><a href="#">Earnings Protection</a></li>
+            <li><a href="#">Hosting resources</a></li>
+            <li><a href="#">Community Center</a></li>
+            <li><a href="#">Hosting responsibly</a></li>
+            <li><a href="#">Airbnb-friendly apartments</a></li>
+            <li><a href="#">Join a free hosting class</a></li>
+            <li><a href="#">Find a co-host</a></li>
+            <li><a href="#">Refer a host</a></li>
+          </ul>
+        </div>
+
+        <div class="f-col">
+          <h3>Airbnb</h3>
+          <ul>
+            <li><a href="#">2026 Summer Release</a></li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Gift cards</a></li>
+            <li><a href="#">Airbnb.org emergency stays</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="legal-part">
+          <span>&copy; 2026 Airbnb, Inc.</span>
+          <span class="dot">&middot;</span>
+          <a href="#">Privacy</a>
+          <span class="dot">&middot;</span>
+          <a href="#">Terms</a>
+          <span class="dot">&middot;</span>
+          <a href="#">Your Privacy Choices</a>
+          <span class="privacy-badge"><i class="fa fa-check" aria-hidden="true"></i></span>
+        </div>
+
+        <div class="locale-social">
+          <div class="locale-box">
+            <a href="#" class="loc-btn"><i class="fa fa-globe" aria-hidden="true"></i> English (US)</a>
+            <a href="#" class="loc-btn">$ USD</a>
+          </div>
+          <div class="social-box">
+            <a href="#" aria-label="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="fees-box">
+    <i class="fa fa-tag" aria-hidden="true"></i>
+    <span>Prices include all fees</span>
+  </div>
+
+  <nav class="bottom-bar">
+    <a href="#" class="b-link active">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <span>Explore</span>
+    </a>
+    <a href="#" class="b-link">
+      <i class="fa fa-heart-o" aria-hidden="true"></i>
+      <span>Wishlists</span>
+    </a>
+    <a href="#" class="b-link">
+      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+      <span>Log in</span>
+    </a>
+  </nav>
+
+</body>
+</html>
